@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Weather App </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+      background-image: url("images/background.png");
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+    }
+    </style>
+<body>
+    
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="enter city name" spellcheck="false">
+            <button> <img src="images/search.png"></button>
+        </div>
+
+        <div class="weather">
+            <img src="images/Rain.png" class="weather-icon">
+            <div class="weather__datetime">
+                <p>Monday 31 July 2023  11:00 AM </p>
+            </div>
+            <h1 class="temp">°c</h1>
+            <h2 class="city">--</h2>
+            <div class="details">
+                
+                <next>
+                <div class="col">
+                    <img src="images/Humidity.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                         <p>Humidity</p>   
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/Wind.png">
+                    <div>
+                        <p class="Wind">15km/h</p>
+                         <p>Wind speed</p>   
+                    </div>
+                </div>
+            </next>
+            <next>
+            <div class="col">
+            <img src="images/Feels like.png">
+            <div>
+            <p class="high">25°C</p>
+            <p>feelslike</p>
+            </div>
+            </div>
+            <div class="col">
+            <img src="images/pressure.png">
+            <div>
+                <p class="pressure">1005 pa</p>
+                <p>pressure</p>
+            </div>
+            </div>
+            </next>
+            </div>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+    
+</body>
+</html>
